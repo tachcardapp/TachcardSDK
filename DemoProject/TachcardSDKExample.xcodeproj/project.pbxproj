@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CE373F7CA931C2F397C9331 /* libPods-TachcardSDKExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDFEE01FD42DC31D50EA662 /* libPods-TachcardSDKExample.a */; };
+		84525C621FA9C7D0008578CD /* ServicePayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84525C601FA9C7D0008578CD /* ServicePayViewController.m */; };
+		84525C631FA9C7D0008578CD /* ServicePayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84525C611FA9C7D0008578CD /* ServicePayViewController.xib */; };
+		84609B771EB07A8E00BAF9C1 /* QrInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B751EB07A8E00BAF9C1 /* QrInvoiceViewController.m */; };
+		84609B781EB07A8E00BAF9C1 /* QrInvoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84609B761EB07A8E00BAF9C1 /* QrInvoiceViewController.xib */; };
+		84609B7C1EB0810500BAF9C1 /* QrImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B7A1EB0810500BAF9C1 /* QrImageViewController.m */; };
+		84609B7D1EB0810500BAF9C1 /* QrImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84609B7B1EB0810500BAF9C1 /* QrImageViewController.xib */; };
+		84609B861EB0A42800BAF9C1 /* QrScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B841EB0A42800BAF9C1 /* QrScanViewController.m */; };
+		84609B871EB0A42800BAF9C1 /* QrScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84609B851EB0A42800BAF9C1 /* QrScanViewController.xib */; };
+		84609B8C1EB0BED500BAF9C1 /* WalletPickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B8A1EB0BED500BAF9C1 /* WalletPickController.m */; };
+		84609B8D1EB0BED500BAF9C1 /* WalletPickController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84609B8B1EB0BED500BAF9C1 /* WalletPickController.xib */; };
+		84609B901EB0C45B00BAF9C1 /* ReceiptPayWithTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B8F1EB0C45B00BAF9C1 /* ReceiptPayWithTokenViewController.m */; };
+		84609B931EB0C8D600BAF9C1 /* PaydescPayWithUrlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B921EB0C8D600BAF9C1 /* PaydescPayWithUrlViewController.m */; };
+		84609B981EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B961EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.m */; };
+		84609B991EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84609B971EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.xib */; };
+		84609B9C1EB0DCEF00BAF9C1 /* ConvertPickWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84609B9B1EB0DCEF00BAF9C1 /* ConvertPickWalletViewController.m */; };
+		849479001EC9B0E100249F86 /* PayTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849478FE1EC9B0E100249F86 /* PayTypeViewController.m */; };
+		849479011EC9B0E100249F86 /* PayTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849478FF1EC9B0E100249F86 /* PayTypeViewController.xib */; };
+		849479061EC9BAC500249F86 /* AnyCardTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849479041EC9BAC500249F86 /* AnyCardTransferViewController.m */; };
+		849479071EC9BAC500249F86 /* AnyCardTransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849479051EC9BAC500249F86 /* AnyCardTransferViewController.xib */; };
+		84B084211EA8D6190094FDD8 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0841F1EA8D6190094FDD8 /* AuthViewController.m */; };
+		84B084221EA8D6190094FDD8 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B084201EA8D6190094FDD8 /* AuthViewController.xib */; };
+		84B084661EAE23620094FDD8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B084641EAE23620094FDD8 /* MainViewController.m */; };
+		84B084671EAE23620094FDD8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B084651EAE23620094FDD8 /* MainViewController.xib */; };
+		84B0846D1EAF311E0094FDD8 /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B0846B1EAF311E0094FDD8 /* AccountsViewController.m */; };
+		84B084741EAF37410094FDD8 /* AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B084721EAF37410094FDD8 /* AddCardViewController.m */; };
+		84B084751EAF37410094FDD8 /* AddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B084731EAF37410094FDD8 /* AddCardViewController.xib */; };
+		84CCF722204982500047A770 /* MasterpassRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCF720204982500047A770 /* MasterpassRegisterViewController.m */; };
+		84CCF723204982500047A770 /* MasterpassRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCF721204982500047A770 /* MasterpassRegisterViewController.xib */; };
+		84CCF72F20498E100047A770 /* MasterpassVcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCF72D20498E100047A770 /* MasterpassVcodeViewController.m */; };
+		84CCF73020498E100047A770 /* MasterpassVcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCF72E20498E100047A770 /* MasterpassVcodeViewController.xib */; };
+		84CCF73B20499CB50047A770 /* MasterpassPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCF73920499CB50047A770 /* MasterpassPayViewController.m */; };
+		84CCF73C20499CB50047A770 /* MasterpassPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCF73A20499CB50047A770 /* MasterpassPayViewController.xib */; };
+		84CCF745204AB6240047A770 /* MasterpassWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CCF743204AB6240047A770 /* MasterpassWebViewController.m */; };
+		84CCF746204AB6240047A770 /* MasterpassWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CCF744204AB6240047A770 /* MasterpassWebViewController.xib */; };
+		84F195851E96660F00AD869D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F195841E96660F00AD869D /* main.m */; };
+		84F195881E96660F00AD869D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F195871E96660F00AD869D /* AppDelegate.m */; };
+		84F195901E96660F00AD869D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F1958F1E96660F00AD869D /* Assets.xcassets */; };
+		84F195931E96660F00AD869D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F195911E96660F00AD869D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		68FA398FD2DDC8D123674BE0 /* Pods-TachcardSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachcardSDKExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TachcardSDKExample/Pods-TachcardSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
+		84525C5F1FA9C7D0008578CD /* ServicePayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicePayViewController.h; sourceTree = "<group>"; };
+		84525C601FA9C7D0008578CD /* ServicePayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicePayViewController.m; sourceTree = "<group>"; };
+		84525C611FA9C7D0008578CD /* ServicePayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicePayViewController.xib; sourceTree = "<group>"; };
+		84609B741EB07A8E00BAF9C1 /* QrInvoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QrInvoiceViewController.h; sourceTree = "<group>"; };
+		84609B751EB07A8E00BAF9C1 /* QrInvoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QrInvoiceViewController.m; sourceTree = "<group>"; };
+		84609B761EB07A8E00BAF9C1 /* QrInvoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QrInvoiceViewController.xib; sourceTree = "<group>"; };
+		84609B791EB0810500BAF9C1 /* QrImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QrImageViewController.h; sourceTree = "<group>"; };
+		84609B7A1EB0810500BAF9C1 /* QrImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QrImageViewController.m; sourceTree = "<group>"; };
+		84609B7B1EB0810500BAF9C1 /* QrImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QrImageViewController.xib; sourceTree = "<group>"; };
+		84609B831EB0A42800BAF9C1 /* QrScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QrScanViewController.h; sourceTree = "<group>"; };
+		84609B841EB0A42800BAF9C1 /* QrScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QrScanViewController.m; sourceTree = "<group>"; };
+		84609B851EB0A42800BAF9C1 /* QrScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QrScanViewController.xib; sourceTree = "<group>"; };
+		84609B891EB0BED500BAF9C1 /* WalletPickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletPickController.h; sourceTree = "<group>"; };
+		84609B8A1EB0BED500BAF9C1 /* WalletPickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletPickController.m; sourceTree = "<group>"; };
+		84609B8B1EB0BED500BAF9C1 /* WalletPickController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletPickController.xib; sourceTree = "<group>"; };
+		84609B8E1EB0C45B00BAF9C1 /* ReceiptPayWithTokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptPayWithTokenViewController.h; sourceTree = "<group>"; };
+		84609B8F1EB0C45B00BAF9C1 /* ReceiptPayWithTokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptPayWithTokenViewController.m; sourceTree = "<group>"; };
+		84609B911EB0C8D600BAF9C1 /* PaydescPayWithUrlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaydescPayWithUrlViewController.h; sourceTree = "<group>"; };
+		84609B921EB0C8D600BAF9C1 /* PaydescPayWithUrlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaydescPayWithUrlViewController.m; sourceTree = "<group>"; };
+		84609B951EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertPickWalletViewControllers.h; sourceTree = "<group>"; };
+		84609B961EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertPickWalletViewControllers.m; sourceTree = "<group>"; };
+		84609B971EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConvertPickWalletViewControllers.xib; sourceTree = "<group>"; };
+		84609B9A1EB0DCEF00BAF9C1 /* ConvertPickWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertPickWalletViewController.h; sourceTree = "<group>"; };
+		84609B9B1EB0DCEF00BAF9C1 /* ConvertPickWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertPickWalletViewController.m; sourceTree = "<group>"; };
+		849478FD1EC9B0E100249F86 /* PayTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayTypeViewController.h; sourceTree = "<group>"; };
+		849478FE1EC9B0E100249F86 /* PayTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayTypeViewController.m; sourceTree = "<group>"; };
+		849478FF1EC9B0E100249F86 /* PayTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayTypeViewController.xib; sourceTree = "<group>"; };
+		849479031EC9BAC500249F86 /* AnyCardTransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyCardTransferViewController.h; sourceTree = "<group>"; };
+		849479041EC9BAC500249F86 /* AnyCardTransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyCardTransferViewController.m; sourceTree = "<group>"; };
+		849479051EC9BAC500249F86 /* AnyCardTransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnyCardTransferViewController.xib; sourceTree = "<group>"; };
+		84B0841E1EA8D6190094FDD8 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		84B0841F1EA8D6190094FDD8 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		84B084201EA8D6190094FDD8 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		84B084631EAE23620094FDD8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		84B084641EAE23620094FDD8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		84B084651EAE23620094FDD8 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		84B0846A1EAF311E0094FDD8 /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
+		84B0846B1EAF311E0094FDD8 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
+		84B084711EAF37410094FDD8 /* AddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCardViewController.h; sourceTree = "<group>"; };
+		84B084721EAF37410094FDD8 /* AddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCardViewController.m; sourceTree = "<group>"; };
+		84B084731EAF37410094FDD8 /* AddCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCardViewController.xib; sourceTree = "<group>"; };
+		84B084761EAF3D840094FDD8 /* TCCPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TCCPrefixHeader.pch; path = ../TCCPrefixHeader.pch; sourceTree = "<group>"; };
+		84CCF71F204982500047A770 /* MasterpassRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterpassRegisterViewController.h; sourceTree = "<group>"; };
+		84CCF720204982500047A770 /* MasterpassRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterpassRegisterViewController.m; sourceTree = "<group>"; };
+		84CCF721204982500047A770 /* MasterpassRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterpassRegisterViewController.xib; sourceTree = "<group>"; };
+		84CCF72C20498E100047A770 /* MasterpassVcodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterpassVcodeViewController.h; sourceTree = "<group>"; };
+		84CCF72D20498E100047A770 /* MasterpassVcodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterpassVcodeViewController.m; sourceTree = "<group>"; };
+		84CCF72E20498E100047A770 /* MasterpassVcodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterpassVcodeViewController.xib; sourceTree = "<group>"; };
+		84CCF73820499CB50047A770 /* MasterpassPayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterpassPayViewController.h; sourceTree = "<group>"; };
+		84CCF73920499CB50047A770 /* MasterpassPayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterpassPayViewController.m; sourceTree = "<group>"; };
+		84CCF73A20499CB50047A770 /* MasterpassPayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterpassPayViewController.xib; sourceTree = "<group>"; };
+		84CCF742204AB6240047A770 /* MasterpassWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterpassWebViewController.h; sourceTree = "<group>"; };
+		84CCF743204AB6240047A770 /* MasterpassWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterpassWebViewController.m; sourceTree = "<group>"; };
+		84CCF744204AB6240047A770 /* MasterpassWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterpassWebViewController.xib; sourceTree = "<group>"; };
+		84F195801E96660F00AD869D /* TachcardSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TachcardSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F195841E96660F00AD869D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F195861E96660F00AD869D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84F195871E96660F00AD869D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84F1958F1E96660F00AD869D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F195921E96660F00AD869D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F195941E96660F00AD869D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBDFEE01FD42DC31D50EA662 /* libPods-TachcardSDKExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TachcardSDKExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E563CD4CA443D9DDE964AB00 /* Pods-TachcardSDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TachcardSDKExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TachcardSDKExample/Pods-TachcardSDKExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F1957D1E96660F00AD869D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE373F7CA931C2F397C9331 /* libPods-TachcardSDKExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		662FAE65D4165A8330C80020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBDFEE01FD42DC31D50EA662 /* libPods-TachcardSDKExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84525C5E1FA9C7A7008578CD /* ServicePayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84525C5F1FA9C7D0008578CD /* ServicePayViewController.h */,
+				84525C601FA9C7D0008578CD /* ServicePayViewController.m */,
+				84525C611FA9C7D0008578CD /* ServicePayViewController.xib */,
+			);
+			path = ServicePayViewController;
+			sourceTree = "<group>";
+		};
+		84609B731EB07A7B00BAF9C1 /* QrImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84609B741EB07A8E00BAF9C1 /* QrInvoiceViewController.h */,
+				84609B751EB07A8E00BAF9C1 /* QrInvoiceViewController.m */,
+				84609B761EB07A8E00BAF9C1 /* QrInvoiceViewController.xib */,
+				84609B791EB0810500BAF9C1 /* QrImageViewController.h */,
+				84609B7A1EB0810500BAF9C1 /* QrImageViewController.m */,
+				84609B7B1EB0810500BAF9C1 /* QrImageViewController.xib */,
+			);
+			path = QrImageViewController;
+			sourceTree = "<group>";
+		};
+		84609B821EB0A41600BAF9C1 /* QrScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84609B831EB0A42800BAF9C1 /* QrScanViewController.h */,
+				84609B841EB0A42800BAF9C1 /* QrScanViewController.m */,
+				84609B851EB0A42800BAF9C1 /* QrScanViewController.xib */,
+			);
+			path = QrScanViewController;
+			sourceTree = "<group>";
+		};
+		84609B881EB0BE8E00BAF9C1 /* PayViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84609B891EB0BED500BAF9C1 /* WalletPickController.h */,
+				84609B8A1EB0BED500BAF9C1 /* WalletPickController.m */,
+				84609B8B1EB0BED500BAF9C1 /* WalletPickController.xib */,
+				84609B8E1EB0C45B00BAF9C1 /* ReceiptPayWithTokenViewController.h */,
+				84609B8F1EB0C45B00BAF9C1 /* ReceiptPayWithTokenViewController.m */,
+				84609B911EB0C8D600BAF9C1 /* PaydescPayWithUrlViewController.h */,
+				84609B921EB0C8D600BAF9C1 /* PaydescPayWithUrlViewController.m */,
+			);
+			path = PayViewControllers;
+			sourceTree = "<group>";
+		};
+		84609B941EB0DAD700BAF9C1 /* ConvertViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84609B951EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.h */,
+				84609B961EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.m */,
+				84609B971EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.xib */,
+				84609B9A1EB0DCEF00BAF9C1 /* ConvertPickWalletViewController.h */,
+				84609B9B1EB0DCEF00BAF9C1 /* ConvertPickWalletViewController.m */,
+			);
+			path = ConvertViewControllers;
+			sourceTree = "<group>";
+		};
+		849478FC1EC9B0CA00249F86 /* PayTypeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				849478FD1EC9B0E100249F86 /* PayTypeViewController.h */,
+				849478FE1EC9B0E100249F86 /* PayTypeViewController.m */,
+				849478FF1EC9B0E100249F86 /* PayTypeViewController.xib */,
+			);
+			path = PayTypeViewController;
+			sourceTree = "<group>";
+		};
+		849479021EC9BAB000249F86 /* AnyCardTransferViewController */ = {
+			isa = PBXGroup;
+			children = (
+				849479031EC9BAC500249F86 /* AnyCardTransferViewController.h */,
+				849479041EC9BAC500249F86 /* AnyCardTransferViewController.m */,
+				849479051EC9BAC500249F86 /* AnyCardTransferViewController.xib */,
+			);
+			path = AnyCardTransferViewController;
+			sourceTree = "<group>";
+		};
+		84B0841B1EA8D4D60094FDD8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CCF71D2049821D0047A770 /* MasterpassViewControllers */,
+				84525C5E1FA9C7A7008578CD /* ServicePayViewController */,
+				849479021EC9BAB000249F86 /* AnyCardTransferViewController */,
+				849478FC1EC9B0CA00249F86 /* PayTypeViewController */,
+				84609B941EB0DAD700BAF9C1 /* ConvertViewControllers */,
+				84609B881EB0BE8E00BAF9C1 /* PayViewControllers */,
+				84609B821EB0A41600BAF9C1 /* QrScanViewController */,
+				84609B731EB07A7B00BAF9C1 /* QrImageViewController */,
+				84B084701EAF37340094FDD8 /* AddCardViewController */,
+				84B084691EAF31100094FDD8 /* AccountsViewController */,
+				84B084621EAE234C0094FDD8 /* MainViewControllers */,
+				84B0841D1EA8D5930094FDD8 /* AuthViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84B0841D1EA8D5930094FDD8 /* AuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84B0841E1EA8D6190094FDD8 /* AuthViewController.h */,
+				84B0841F1EA8D6190094FDD8 /* AuthViewController.m */,
+				84B084201EA8D6190094FDD8 /* AuthViewController.xib */,
+			);
+			name = AuthViewController;
+			path = AuthViewControllers;
+			sourceTree = "<group>";
+		};
+		84B084621EAE234C0094FDD8 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84B084631EAE23620094FDD8 /* MainViewController.h */,
+				84B084641EAE23620094FDD8 /* MainViewController.m */,
+				84B084651EAE23620094FDD8 /* MainViewController.xib */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		84B084691EAF31100094FDD8 /* AccountsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84B0846A1EAF311E0094FDD8 /* AccountsViewController.h */,
+				84B0846B1EAF311E0094FDD8 /* AccountsViewController.m */,
+			);
+			path = AccountsViewController;
+			sourceTree = "<group>";
+		};
+		84B084701EAF37340094FDD8 /* AddCardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84B084711EAF37410094FDD8 /* AddCardViewController.h */,
+				84B084721EAF37410094FDD8 /* AddCardViewController.m */,
+				84B084731EAF37410094FDD8 /* AddCardViewController.xib */,
+			);
+			path = AddCardViewController;
+			sourceTree = "<group>";
+		};
+		84CCF71D2049821D0047A770 /* MasterpassViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CCF742204AB6240047A770 /* MasterpassWebViewController.h */,
+				84CCF743204AB6240047A770 /* MasterpassWebViewController.m */,
+				84CCF744204AB6240047A770 /* MasterpassWebViewController.xib */,
+				84CCF73820499CB50047A770 /* MasterpassPayViewController.h */,
+				84CCF73920499CB50047A770 /* MasterpassPayViewController.m */,
+				84CCF73A20499CB50047A770 /* MasterpassPayViewController.xib */,
+				84CCF71F204982500047A770 /* MasterpassRegisterViewController.h */,
+				84CCF720204982500047A770 /* MasterpassRegisterViewController.m */,
+				84CCF721204982500047A770 /* MasterpassRegisterViewController.xib */,
+				84CCF72C20498E100047A770 /* MasterpassVcodeViewController.h */,
+				84CCF72D20498E100047A770 /* MasterpassVcodeViewController.m */,
+				84CCF72E20498E100047A770 /* MasterpassVcodeViewController.xib */,
+			);
+			path = MasterpassViewControllers;
+			sourceTree = "<group>";
+		};
+		84F195771E96660F00AD869D = {
+			isa = PBXGroup;
+			children = (
+				84F195821E96660F00AD869D /* TachcardSDKExample */,
+				84F195811E96660F00AD869D /* Products */,
+				CA942364E7D343DDB1DE424E /* Pods */,
+				662FAE65D4165A8330C80020 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84F195811E96660F00AD869D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F195801E96660F00AD869D /* TachcardSDKExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F195821E96660F00AD869D /* TachcardSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				84F195861E96660F00AD869D /* AppDelegate.h */,
+				84F195871E96660F00AD869D /* AppDelegate.m */,
+				84B0841B1EA8D4D60094FDD8 /* ViewControllers */,
+				84F195831E96660F00AD869D /* Supporting Files */,
+			);
+			path = TachcardSDKExample;
+			sourceTree = "<group>";
+		};
+		84F195831E96660F00AD869D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84B084761EAF3D840094FDD8 /* TCCPrefixHeader.pch */,
+				84F1958F1E96660F00AD869D /* Assets.xcassets */,
+				84F195911E96660F00AD869D /* LaunchScreen.storyboard */,
+				84F195941E96660F00AD869D /* Info.plist */,
+				84F195841E96660F00AD869D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA942364E7D343DDB1DE424E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68FA398FD2DDC8D123674BE0 /* Pods-TachcardSDKExample.debug.xcconfig */,
+				E563CD4CA443D9DDE964AB00 /* Pods-TachcardSDKExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F1957F1E96660F00AD869D /* TachcardSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F195971E96660F00AD869D /* Build configuration list for PBXNativeTarget "TachcardSDKExample" */;
+			buildPhases = (
+				C1C6CA695205DBE0F0EA7278 /* [CP] Check Pods Manifest.lock */,
+				84F1957C1E96660F00AD869D /* Sources */,
+				84F1957D1E96660F00AD869D /* Frameworks */,
+				84F1957E1E96660F00AD869D /* Resources */,
+				68E4B62C9F7E63263CB89334 /* [CP] Embed Pods Frameworks */,
+				0370CD4FF736C26EAA67A3CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TachcardSDKExample;
+			productName = TachcardSDKExample;
+			productReference = 84F195801E96660F00AD869D /* TachcardSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F195781E96660F00AD869D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = CWG;
+				TargetAttributes = {
+					84F1957F1E96660F00AD869D = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = FGY9M8PF4D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84F1957B1E96660F00AD869D /* Build configuration list for PBXProject "TachcardSDKExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F195771E96660F00AD869D;
+			productRefGroup = 84F195811E96660F00AD869D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F1957F1E96660F00AD869D /* TachcardSDKExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F1957E1E96660F00AD869D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CCF723204982500047A770 /* MasterpassRegisterViewController.xib in Resources */,
+				84609B991EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.xib in Resources */,
+				84CCF746204AB6240047A770 /* MasterpassWebViewController.xib in Resources */,
+				84609B871EB0A42800BAF9C1 /* QrScanViewController.xib in Resources */,
+				849479011EC9B0E100249F86 /* PayTypeViewController.xib in Resources */,
+				84B084751EAF37410094FDD8 /* AddCardViewController.xib in Resources */,
+				84CCF73C20499CB50047A770 /* MasterpassPayViewController.xib in Resources */,
+				849479071EC9BAC500249F86 /* AnyCardTransferViewController.xib in Resources */,
+				84B084221EA8D6190094FDD8 /* AuthViewController.xib in Resources */,
+				84609B8D1EB0BED500BAF9C1 /* WalletPickController.xib in Resources */,
+				84525C631FA9C7D0008578CD /* ServicePayViewController.xib in Resources */,
+				84F195931E96660F00AD869D /* LaunchScreen.storyboard in Resources */,
+				84609B781EB07A8E00BAF9C1 /* QrInvoiceViewController.xib in Resources */,
+				84F195901E96660F00AD869D /* Assets.xcassets in Resources */,
+				84B084671EAE23620094FDD8 /* MainViewController.xib in Resources */,
+				84609B7D1EB0810500BAF9C1 /* QrImageViewController.xib in Resources */,
+				84CCF73020498E100047A770 /* MasterpassVcodeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0370CD4FF736C26EAA67A3CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TachcardSDKExample/Pods-TachcardSDKExample-resources.sh",
+				"${PODS_ROOT}/TachcardSDK/Resources/libcrypto.a",
+				"${PODS_ROOT}/TachcardSDK/Resources/libMfsIOSLibrary2Universal.a",
+				"${PODS_ROOT}/TachcardSDK/Resources/libssl.a",
+				"${PODS_ROOT}/TachcardSDK/Resources/pubkey2.pem",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/libcrypto.a",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/libMfsIOSLibrary2Universal.a",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/libssl.a",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pubkey2.pem",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TachcardSDKExample/Pods-TachcardSDKExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E4B62C9F7E63263CB89334 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TachcardSDKExample/Pods-TachcardSDKExample-frameworks.sh",
+				"${PODS_ROOT}/MasterpassQRCoreSDK/Frameworks/MasterpassQRCoreSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MasterpassQRCoreSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TachcardSDKExample/Pods-TachcardSDKExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C6CA695205DBE0F0EA7278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TachcardSDKExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F1957C1E96660F00AD869D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CCF72F20498E100047A770 /* MasterpassVcodeViewController.m in Sources */,
+				84CCF73B20499CB50047A770 /* MasterpassPayViewController.m in Sources */,
+				849479061EC9BAC500249F86 /* AnyCardTransferViewController.m in Sources */,
+				84609B9C1EB0DCEF00BAF9C1 /* ConvertPickWalletViewController.m in Sources */,
+				84CCF722204982500047A770 /* MasterpassRegisterViewController.m in Sources */,
+				84F195881E96660F00AD869D /* AppDelegate.m in Sources */,
+				84609B981EB0DB3200BAF9C1 /* ConvertPickWalletViewControllers.m in Sources */,
+				84609B8C1EB0BED500BAF9C1 /* WalletPickController.m in Sources */,
+				84525C621FA9C7D0008578CD /* ServicePayViewController.m in Sources */,
+				84B084211EA8D6190094FDD8 /* AuthViewController.m in Sources */,
+				84609B771EB07A8E00BAF9C1 /* QrInvoiceViewController.m in Sources */,
+				84609B861EB0A42800BAF9C1 /* QrScanViewController.m in Sources */,
+				84B084741EAF37410094FDD8 /* AddCardViewController.m in Sources */,
+				84F195851E96660F00AD869D /* main.m in Sources */,
+				84609B901EB0C45B00BAF9C1 /* ReceiptPayWithTokenViewController.m in Sources */,
+				84B084661EAE23620094FDD8 /* MainViewController.m in Sources */,
+				84B0846D1EAF311E0094FDD8 /* AccountsViewController.m in Sources */,
+				849479001EC9B0E100249F86 /* PayTypeViewController.m in Sources */,
+				84CCF745204AB6240047A770 /* MasterpassWebViewController.m in Sources */,
+				84609B7C1EB0810500BAF9C1 /* QrImageViewController.m in Sources */,
+				84609B931EB0C8D600BAF9C1 /* PaydescPayWithUrlViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84F195911E96660F00AD869D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F195921E96660F00AD869D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F195951E96660F00AD869D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84F195961E96660F00AD869D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F195981E96660F00AD869D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FA398FD2DDC8D123674BE0 /* Pods-TachcardSDKExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FGY9M8PF4D;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = TCCPrefixHeader.pch;
+				INFOPLIST_FILE = TachcardSDKExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TachcardSDKExample/ViewControllers/MasterpassViewControllers",
+					"$(PROJECT_DIR)/TachcardSDKExample/ViewControllers",
+					"$(PROJECT_DIR)/TachcardSDKExample",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/TachcardSDK/Resources",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CWG.tachcardSDKTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84F195991E96660F00AD869D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E563CD4CA443D9DDE964AB00 /* Pods-TachcardSDKExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FGY9M8PF4D;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = TCCPrefixHeader.pch;
+				INFOPLIST_FILE = TachcardSDKExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TachcardSDKExample/ViewControllers/MasterpassViewControllers",
+					"$(PROJECT_DIR)/TachcardSDKExample/ViewControllers",
+					"$(PROJECT_DIR)/TachcardSDKExample",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/TachcardSDK/Resources",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CWG.tachcardSDKTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F1957B1E96660F00AD869D /* Build configuration list for PBXProject "TachcardSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F195951E96660F00AD869D /* Debug */,
+				84F195961E96660F00AD869D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F195971E96660F00AD869D /* Build configuration list for PBXNativeTarget "TachcardSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F195981E96660F00AD869D /* Debug */,
+				84F195991E96660F00AD869D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F195781E96660F00AD869D /* Project object */;
+}

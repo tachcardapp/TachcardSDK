@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MasterpassPayViewController">
+            <connections>
+                <outlet property="accountTextField" destination="tar-Iy-PKF" id="Rxj-kC-CMi"/>
+                <outlet property="amountTextField" destination="sUh-ww-npo" id="Pnn-He-5w1"/>
+                <outlet property="nameLabel" destination="JOC-tw-38B" id="sG9-zy-Tox"/>
+                <outlet property="tableView" destination="ouv-lc-8wg" id="jKD-pW-htp"/>
+                <outlet property="urlStringTextField" destination="vlk-9h-L9G" id="vVL-ct-mv2"/>
+                <outlet property="view" destination="TDE-xt-Dy9" id="Gcd-eD-WWV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TDE-xt-Dy9">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOC-tw-38B">
+                    <rect key="frame" x="5" y="10" width="32.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://user.tachcard.com/ru/pay-vodafone?account=" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlk-9h-L9G">
+                    <rect key="frame" x="5" y="36" width="365" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpq-Wr-czE">
+                    <rect key="frame" x="5" y="76" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sUh-ww-npo">
+                    <rect key="frame" x="5" y="102" width="365" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im5-6x-Pmf">
+                    <rect key="frame" x="5" y="142" width="63.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tar-Iy-PKF">
+                    <rect key="frame" x="5" y="168" width="365" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ouv-lc-8wg">
+                    <rect key="frame" x="0.0" y="203" width="375" height="464"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZLy-Lo-1BA"/>
+                        <outlet property="delegate" destination="-1" id="Ktv-yB-Vpd"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Im5-6x-Pmf" firstAttribute="top" secondItem="sUh-ww-npo" secondAttribute="bottom" constant="10" id="0Ts-UQ-eZ2"/>
+                <constraint firstAttribute="trailing" secondItem="vlk-9h-L9G" secondAttribute="trailing" constant="5" id="3PA-uH-x5Y"/>
+                <constraint firstItem="sUh-ww-npo" firstAttribute="leading" secondItem="mpq-Wr-czE" secondAttribute="leading" id="7Ug-Ou-CEw"/>
+                <constraint firstAttribute="trailing" secondItem="ouv-lc-8wg" secondAttribute="trailing" id="Bm4-3Z-pN2"/>
+                <constraint firstAttribute="bottom" secondItem="ouv-lc-8wg" secondAttribute="bottom" id="CjI-jw-HFu"/>
+                <constraint firstItem="vlk-9h-L9G" firstAttribute="top" secondItem="JOC-tw-38B" secondAttribute="bottom" constant="5" id="GG8-nd-Jkr"/>
+                <constraint firstItem="sUh-ww-npo" firstAttribute="top" secondItem="mpq-Wr-czE" secondAttribute="bottom" constant="5" id="Ohc-CW-CdX"/>
+                <constraint firstItem="Im5-6x-Pmf" firstAttribute="leading" secondItem="TDE-xt-Dy9" secondAttribute="leading" constant="5" id="SAz-Q9-5Ll"/>
+                <constraint firstItem="JOC-tw-38B" firstAttribute="top" secondItem="TDE-xt-Dy9" secondAttribute="top" constant="10" id="SYl-Au-uRA"/>
+                <constraint firstItem="JOC-tw-38B" firstAttribute="leading" secondItem="TDE-xt-Dy9" secondAttribute="leading" constant="5" id="VGf-de-7NU"/>
+                <constraint firstItem="tar-Iy-PKF" firstAttribute="top" secondItem="Im5-6x-Pmf" secondAttribute="bottom" constant="5" id="Zgw-En-xEz"/>
+                <constraint firstItem="ouv-lc-8wg" firstAttribute="top" secondItem="tar-Iy-PKF" secondAttribute="bottom" constant="5" id="Zlg-kJ-55s"/>
+                <constraint firstAttribute="trailing" secondItem="tar-Iy-PKF" secondAttribute="trailing" constant="5" id="kC6-Gg-lhl"/>
+                <constraint firstItem="tar-Iy-PKF" firstAttribute="leading" secondItem="Im5-6x-Pmf" secondAttribute="leading" id="o8d-E1-OBd"/>
+                <constraint firstItem="ouv-lc-8wg" firstAttribute="leading" secondItem="TDE-xt-Dy9" secondAttribute="leading" id="p0g-CK-pTV"/>
+                <constraint firstItem="mpq-Wr-czE" firstAttribute="top" secondItem="vlk-9h-L9G" secondAttribute="bottom" constant="10" id="qHE-yO-7aO"/>
+                <constraint firstItem="mpq-Wr-czE" firstAttribute="leading" secondItem="TDE-xt-Dy9" secondAttribute="leading" constant="5" id="qXd-io-qYS"/>
+                <constraint firstItem="vlk-9h-L9G" firstAttribute="leading" secondItem="TDE-xt-Dy9" secondAttribute="leading" constant="5" id="s5B-9u-glg"/>
+                <constraint firstAttribute="trailing" secondItem="sUh-ww-npo" secondAttribute="trailing" constant="5" id="ucc-oc-GHe"/>
+            </constraints>
+            <point key="canvasLocation" x="-43.5" y="76.5"/>
+        </view>
+    </objects>
+</document>

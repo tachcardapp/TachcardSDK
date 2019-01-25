@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController">
+            <connections>
+                <outlet property="tokenTextField" destination="bOf-NR-T5z" id="aeb-3L-Ocu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoC-p6-CJ6">
+                    <rect key="frame" x="10" y="10" width="300" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOf-NR-T5z">
+                            <rect key="frame" x="10" y="10" width="210" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ax6-BW-E5q">
+                            <rect key="frame" x="230" y="10" width="60" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="o3T-me-pjS"/>
+                            </constraints>
+                            <state key="normal" title="auth"/>
+                            <connections>
+                                <action selector="authUser:" destination="-1" eventType="touchUpInside" id="GfN-tB-Pai"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ax6-BW-E5q" firstAttribute="leading" secondItem="bOf-NR-T5z" secondAttribute="trailing" constant="10" id="5ee-dX-jU1"/>
+                        <constraint firstItem="bOf-NR-T5z" firstAttribute="top" secondItem="ZoC-p6-CJ6" secondAttribute="top" constant="10" id="LH8-nB-s9C"/>
+                        <constraint firstItem="bOf-NR-T5z" firstAttribute="leading" secondItem="ZoC-p6-CJ6" secondAttribute="leading" constant="10" id="LcJ-xw-dgE"/>
+                        <constraint firstAttribute="bottom" secondItem="bOf-NR-T5z" secondAttribute="bottom" constant="10" id="VgL-F0-7uH"/>
+                        <constraint firstItem="Ax6-BW-E5q" firstAttribute="top" secondItem="bOf-NR-T5z" secondAttribute="top" id="Ws2-3N-3Co"/>
+                        <constraint firstAttribute="trailing" secondItem="Ax6-BW-E5q" secondAttribute="trailing" constant="10" id="yDq-3g-alJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZoC-p6-CJ6" secondAttribute="trailing" constant="10" id="1Da-CT-Bdw"/>
+                <constraint firstItem="ZoC-p6-CJ6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="3QW-Qs-tC8"/>
+                <constraint firstItem="ZoC-p6-CJ6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="JxV-83-Etl"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="-244" y="49"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,1 @@
+../../../../MasterpassQRCoreSDK/Frameworks/MasterpassQRCoreSDK.framework/Headers/UnrestrictedData.h

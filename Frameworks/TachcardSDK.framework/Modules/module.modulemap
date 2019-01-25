@@ -1,0 +1,6 @@
+framework module TachcardSDK {
+  umbrella header "TachcardSDK.h"
+
+  export *
+  module * { export * }
+}

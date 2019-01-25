@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MasterpassVcodeViewController">
+            <connections>
+                <outlet property="codeTextField" destination="sh4-it-jd6" id="wyz-DS-Jyk"/>
+                <outlet property="view" destination="u2a-wZ-XGL" id="NWj-jX-GRp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="u2a-wZ-XGL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCk-G2-o5C">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjQ-xG-pci">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="G48-eo-NfV"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLJ-ZI-Pos">
+                            <rect key="frame" x="67.5" y="223.5" width="240" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ST1-0z-Ys3"/>
+                                <constraint firstAttribute="width" constant="240" id="YGQ-Ql-zIe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                            <state key="normal" title="Не приходит сообщение с кодом">
+                                <color key="titleColor" red="0.30588235289999999" green="0.69019607839999997" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" white="1" alpha="0.31351635970000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="resentSms:" destination="-1" eventType="touchUpInside" id="yiY-2Z-Dua"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdZ-mR-2vW">
+                            <rect key="frame" x="15" y="10" width="345" height="76"/>
+                            <string key="text">Вам прийдет смс с кодом подтверждения от банка на тот номер телефона, который вы указали при получении карты. 
+
+Это может занять некоторое время </string>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="13"/>
+                            <color key="textColor" red="0.40784313729999999" green="0.42745098040000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfR-Ug-yH6">
+                            <rect key="frame" x="15" y="132.5" width="360" height="1"/>
+                            <color key="backgroundColor" red="0.81960784310000001" green="0.83529411760000005" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="OFn-EQ-8qk"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*****" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sh4-it-jd6" customClass="MfsTextField">
+                            <rect key="frame" x="130" y="100.5" width="230" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="wDM-Hv-ybx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Код из СМС" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oj-z9-9z4">
+                            <rect key="frame" x="15" y="100.5" width="87" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="GlL-rb-a4X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                            <color key="textColor" red="0.40784313729999999" green="0.42745098040000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSy-vN-He6">
+                            <rect key="frame" x="67.5" y="153.5" width="240" height="50"/>
+                            <color key="backgroundColor" red="0.30588235289999999" green="0.69019607839999997" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="9Cf-rz-odY"/>
+                                <constraint firstAttribute="width" constant="240" id="d9u-ec-s89"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="16"/>
+                            <state key="normal" title="ДАЛЕЕ">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" white="1" alpha="0.31351635970000002" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="nextButtonHandler:" destination="-1" eventType="touchUpInside" id="qqf-Oc-G70"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZSy-vN-He6" firstAttribute="centerX" secondItem="mCk-G2-o5C" secondAttribute="centerX" id="DZW-uB-khm"/>
+                        <constraint firstItem="vfR-Ug-yH6" firstAttribute="top" secondItem="sh4-it-jd6" secondAttribute="bottom" constant="9" id="H1k-Zl-E4Y"/>
+                        <constraint firstItem="sh4-it-jd6" firstAttribute="centerY" secondItem="4oj-z9-9z4" secondAttribute="centerY" id="Hm2-N5-YEt"/>
+                        <constraint firstItem="sh4-it-jd6" firstAttribute="top" secondItem="MdZ-mR-2vW" secondAttribute="bottom" constant="14.5" id="MAL-Kz-uR1"/>
+                        <constraint firstItem="MdZ-mR-2vW" firstAttribute="top" secondItem="mCk-G2-o5C" secondAttribute="top" constant="10" id="MO5-wH-1gk"/>
+                        <constraint firstAttribute="bottom" secondItem="rLJ-ZI-Pos" secondAttribute="bottom" constant="20" id="QAF-tA-cFS"/>
+                        <constraint firstItem="rLJ-ZI-Pos" firstAttribute="centerX" secondItem="mCk-G2-o5C" secondAttribute="centerX" id="RPL-7J-Ick"/>
+                        <constraint firstItem="vfR-Ug-yH6" firstAttribute="leading" secondItem="4oj-z9-9z4" secondAttribute="leading" id="VFM-xy-CwB"/>
+                        <constraint firstAttribute="trailing" secondItem="MdZ-mR-2vW" secondAttribute="trailing" constant="15" id="Wfg-Z1-jvZ"/>
+                        <constraint firstItem="MdZ-mR-2vW" firstAttribute="leading" secondItem="mCk-G2-o5C" secondAttribute="leading" constant="15" id="Yy4-ut-wNS"/>
+                        <constraint firstItem="sh4-it-jd6" firstAttribute="leading" secondItem="4oj-z9-9z4" secondAttribute="trailing" constant="28" id="aUi-Xr-dlC"/>
+                        <constraint firstAttribute="trailing" secondItem="vfR-Ug-yH6" secondAttribute="trailing" id="b39-kl-Cc4"/>
+                        <constraint firstItem="4oj-z9-9z4" firstAttribute="leading" secondItem="mCk-G2-o5C" secondAttribute="leading" constant="15" id="g7U-Nf-s00"/>
+                        <constraint firstAttribute="trailing" secondItem="FjQ-xG-pci" secondAttribute="trailing" id="gxd-6e-PCn"/>
+                        <constraint firstItem="FjQ-xG-pci" firstAttribute="leading" secondItem="mCk-G2-o5C" secondAttribute="leading" id="hu0-ub-Db1"/>
+                        <constraint firstItem="FjQ-xG-pci" firstAttribute="leading" secondItem="mCk-G2-o5C" secondAttribute="leading" id="jb2-GI-QZx"/>
+                        <constraint firstAttribute="trailing" secondItem="sh4-it-jd6" secondAttribute="trailing" constant="15" id="lvS-fj-eim"/>
+                        <constraint firstItem="FjQ-xG-pci" firstAttribute="top" secondItem="mCk-G2-o5C" secondAttribute="top" id="mtV-xA-hOu"/>
+                        <constraint firstItem="rLJ-ZI-Pos" firstAttribute="top" secondItem="ZSy-vN-He6" secondAttribute="bottom" constant="20" id="t4B-JH-nUU"/>
+                        <constraint firstItem="ZSy-vN-He6" firstAttribute="top" secondItem="sh4-it-jd6" secondAttribute="bottom" constant="30" id="xmn-aW-ZfM"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mCk-G2-o5C" secondAttribute="trailing" id="6TE-d9-9ve"/>
+                <constraint firstAttribute="bottom" secondItem="mCk-G2-o5C" secondAttribute="bottom" id="CEL-vh-BOr"/>
+                <constraint firstItem="mCk-G2-o5C" firstAttribute="top" secondItem="u2a-wZ-XGL" secondAttribute="top" id="pLA-ZG-aid"/>
+                <constraint firstItem="FjQ-xG-pci" firstAttribute="width" secondItem="u2a-wZ-XGL" secondAttribute="width" id="piT-1T-btE"/>
+                <constraint firstItem="mCk-G2-o5C" firstAttribute="leading" secondItem="u2a-wZ-XGL" secondAttribute="leading" id="rTb-lR-4z7"/>
+            </constraints>
+            <point key="canvasLocation" x="-107" y="49"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,1 @@
+../../../../TachcardSDK/Frameworks/TachcardSDK.framework/Headers/TCCAPI.h

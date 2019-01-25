@@ -1,0 +1,17 @@
+//
+//  TCCPrefixHeader.pch
+//  TachcardSDKExample
+//
+//  Created by admin on 4/25/17.
+//  Copyright © 2017 CWG. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "EXTScope.h"
+#import <TachcardSDK/TCCAPI.h>
+
+#endif

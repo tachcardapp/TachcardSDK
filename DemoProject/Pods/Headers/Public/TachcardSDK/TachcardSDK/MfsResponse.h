@@ -1,0 +1,1 @@
+../../../../TachcardSDK/Frameworks/TachcardSDK.framework/Headers/MfsResponse.h
